@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importing google font by link tag-->
+    <!--monospace, serif and sans-serif are generic font families in all browsers-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <!--CSS inside of HTML -->
+    <!--It is possible to change the color of an element with the property style which is called style-inline-->
+    <h1 style="color: blue;">CatPhotoApp</h1>
+    
+    <!--Style tag: another way to apply CSS using selectors-->
+    <!--This time the color of all h2 elements will be changed to yellow-->
+    <style>
+        h1{
+            font-family: Lobster, monospace;
+            font-size: 30px;
+        }
+
+        h2{
+            font-family: monospace;
+            color: yellow;
+        }
+    </style>
+    <h1>CatMovile</h1>
+    <h2>CatPhotoMovileApp</h2>
+    <h2>CatPhotoMovileApp</h2>
+    <h2>CatPhotoMovileApp</h2>
+
+    <!--Using CLASSES: reusable styles-->
+    <style>
+        .sub-title{
+            color: green;
+        }
+    </style>
+    <h2 class="sub-title">Cute Cat</h2>
+
+    <style>
+        .rectangle{
+            background-color: pink;
+            width: 150px;
+            height: 100px;
+        }
+        .thick-green-border{
+            border: green 5px solid;
+            border-radius: 10px;
+        }
+    </style>
+    <div class="rectangle thick-green-border"></div>
+</body>
+</html>
