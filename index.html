@@ -51,5 +51,104 @@
         }
     </style>
     <div class="rectangle thick-green-border"></div>
+
+    <!--id attribute should be unique and it can be applied to one element-->
+    <!--An id has a higher specificity (importance) than a class-->
+    <!--We always reference ids by a # hash symbol and a class by a . piriod-->
+    
+    <style>
+        #cat-photo-form{
+            background-color: blue;
+        }
+    </style>
+    
+    <form action="#" id="cat-photo-form">
+        <label for="user-comment">
+            Write a comment:
+            <input id="user-comment" type="text" placeholder="your toughts">
+        </label>
+    </form>
+
+    <!--Padding of an element-->
+    <!--Three important properties control the space that surrounds each HTML element: padding, border, and margin-->
+
+    <!--Padding: amount of space between the element's content and its border-->
+    <!--Margin: amount of space between an element's border and surrounding elements-->
+   
+   <!--
+       Orders of the different properties
+       padding-top
+       padding-right
+       padding-bottom
+       padding-left
+    -->
+    <!--Clockwise Notation to specify the padding:::: padding: 10px 20px 10px 20px-->
+   <style>
+        .box{
+            border: red 5px solid;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            margin: 40px;
+        }
+    </style>
+    <div class="box">padding</div>
+
+    <!--Selector ID and CLASS used so far-->
+    <!--[attr=value] This selector matches and styles elements with a specific attribute value-->
+    <style>
+        [type='radio']{
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+    </style>
+    
+    <div>
+        <p>Cual lenguaje de programacion prefieres?</p>
+        <label for="javascript">
+            Javascript
+            <input type="radio" name="programming-language" id="javascript">
+        </label>
+        <label for="python">
+            Python 
+            <input type="radio" name="programming-language" id="python">
+        </label>
+    </div>
+
+    <!--Absolute units tie to physical units of length-->
+    <!--For example: px, in and mm refer to inches and millimeters, respectively-->
+    <!--Absolute length units approximate the actual measurement on a screen-->
+
+    <!--Relative units, such as em or rem, are relative to another length value-->
+    <!--For example, em is based on the size of an element's font-->
+    <!--If you use it to set the font-size property itself, it's relative to the parent's font-size-->
+
+    <!--
+        EM: Relative to the parent element
+        REM: Relative to the root element (HTML tag)
+    -->
+
+    <!--The default text size in browsers is 16px so if we set a font size using relative units the size is gonna be relative to the default size-->
+    <!--1.5em => 1.5 * 16px = 24px-->
+    <p style="font-size: 1.5em;">
+        text
+    </p>
+
+    <!--Inline styles override styles-->
+    <!--We can override all styles by using IMPORTANT-->
+    <style>
+        #green-text{
+            color: green;
+        }
+        .red-text{
+            color: red !important;
+        }
+        .blue-text{
+            color: blue;
+        }
+    </style>
+    <p id="green-text" class="red-text blue-text" style="color: black;">
+        override css
+    </p>
 </body>
 </html>
