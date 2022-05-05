@@ -150,5 +150,23 @@
     <p id="green-text" class="red-text blue-text" style="color: black;">
         override css
     </p>
+
+    <!--Hex Code uses 6 digits from 0 to F >> #000000 = black-->
+    <p style="color: #56ff00; font-size: 2em; font-weight: 600;">Hex Code for colors</p>
+
+    <!--CSS Variables ara a way to change many css style properties at once-->
+    <!--Provide a browser fallback to prevent problems with non-recognize properties on IE Browser-->
+    <!--Internet Explorer does not support CSS variables-->
+    <!--Inherit CSS Variables with the :root pseudo-class selector-->
+    
+    <style>
+        :root{
+            --color-paragraph: red;
+        }
+        .paragraph{
+            color: var(--color-paragraph, yellow);
+        }
+    </style>
+    <p class="paragraph">using css variables</p>
 </body>
 </html>
