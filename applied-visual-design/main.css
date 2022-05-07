@@ -1,0 +1,57 @@
+body {
+    height: 120vh;
+}
+
+.container {
+  background: red;
+  height: 220px;
+  width: 400px;
+  padding: 5px 20px 5px 20px;
+  /* offset-x | offset-y | blur-radius | color */
+  /* »»» another option offset-x | offset-y | color */
+  /*
+        Especifica una sola box-shadow utilizando:
+
+        Dos, tres, o cuatro valores <length>.
+        Si solo dos valores son definidos, son interpretados como valores <offset-x><offset-y>.
+        Si un tercer valor es dado, es interpretado como un <blur-radius>.
+        Si un cuarto valor es dado, es interpretado como un <spread-radius>.
+        Opcionalmente, la palabra clave inset.
+        Opcionalmente, el valor <color>.
+    */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container p {
+  text-align: justify;
+  line-height: 22px; /* set the height of each line */
+}
+
+.container a{
+    font-size: .9em;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7; /* adjust the opacity to .7 (0 to 1) */
+}
+
+.container a:hover{
+    color: black;
+}
+
+h2 {
+    position: relative;
+    top: 15px; /* move 15px from top...  it does not affect surrounding elements */
+}
+
+.fixed-ball {
+    background: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
